@@ -1,0 +1,29 @@
+package org.Sailpoint;
+import java.util.HashMap;
+
+import java.util.*;
+import javax.script.ScriptContext;
+public class BuildMapRule{
+	public static void main(String[] args) {
+		
+		
+String FirstName = new String("FirstName");
+String lastName = new String("LastName");
+String initials = null;
+if (FirstName != null && FirstName.length() > 0) {
+ char letter = FirstName.charAt(0);
+ letter = Character.toUpperCase(letter);
+ initials = letter + ".";
+}
+if (lastName != null && lastName.length() > 0) {
+ char letter = lastName.charAt(0);
+ letter = Character.toUpperCase((char) letter);
+ initials += letter + ".";
+}
+
+System.out.printf("initials",initials);
+
+Object.put("Initials", initials);
+Oject.put("HireDate", object.remove("InitDate"));
+}
+}
